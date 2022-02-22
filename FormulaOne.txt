@@ -1,0 +1,197 @@
+-- Table: public.CircuitDim
+
+-- DROP TABLE IF EXISTS public."CircuitDim";
+
+CREATE TABLE IF NOT EXISTS public."CircuitDim"
+(
+    "CircuitId" integer NOT NULL,
+    "circuitRef" character varying(50) COLLATE pg_catalog."default",
+    name character varying(50) COLLATE pg_catalog."default",
+    location character varying(50) COLLATE pg_catalog."default",
+    latitude double precision,
+    longitude double precision,
+    "Altitude" double precision,
+    CONSTRAINT "circuitId_pkey" PRIMARY KEY ("CircuitId")
+)
+
+TABLESPACE pg_default;
+
+ALTER TABLE IF EXISTS public."CircuitDim"
+    OWNER to postgres;
+
+-- Table: public.ConstructorsDim
+
+-- DROP TABLE IF EXISTS public."ConstructorsDim";
+
+CREATE TABLE IF NOT EXISTS public."ConstructorsDim"
+(
+    "constructorId" integer NOT NULL,
+    "constructorRef" character varying(50) COLLATE pg_catalog."default",
+    "constructorName" character varying(50) COLLATE pg_catalog."default",
+    "constructorNationality" character varying(50) COLLATE pg_catalog."default",
+    CONSTRAINT "Constructor_pkey" PRIMARY KEY ("constructorId")
+)
+
+TABLESPACE pg_default;
+
+ALTER TABLE IF EXISTS public."ConstructorsDim"
+    OWNER to postgres;
+
+-- Table: public.DateTimeDim
+
+-- DROP TABLE IF EXISTS public."DateTimeDim";
+
+CREATE TABLE IF NOT EXISTS public."DateTimeDim"
+(
+    "dateId" integer NOT NULL,
+    date date,
+    day integer,
+    month integer,
+    year integer,
+    "time" time without time zone,
+    CONSTRAINT "DateTimeDim_pkey" PRIMARY KEY ("dateId")
+)
+
+TABLESPACE pg_default;
+
+ALTER TABLE IF EXISTS public."DateTimeDim"
+    OWNER to postgres;
+
+-- Table: public.DriverDim
+
+-- DROP TABLE IF EXISTS public."DriverDim";
+
+CREATE TABLE IF NOT EXISTS public."DriverDim"
+(
+    "DriverID" integer NOT NULL,
+    "DriverRef" character varying(25) COLLATE pg_catalog."default",
+    "Number" integer,
+    "Code" character varying(25) COLLATE pg_catalog."default",
+    "ForeName" character varying(25) COLLATE pg_catalog."default",
+    "SurName" character varying(25) COLLATE pg_catalog."default",
+    "Dob" date,
+    "Nationality" character varying(25) COLLATE pg_catalog."default",
+    CONSTRAINT "Driver_pkey" PRIMARY KEY ("DriverID")
+)
+
+TABLESPACE pg_default;
+
+ALTER TABLE IF EXISTS public."DriverDim"
+    OWNER to postgres;
+
+-- Table: public.RaceDim
+
+-- DROP TABLE IF EXISTS public."RaceDim";
+
+CREATE TABLE IF NOT EXISTS public."RaceDim"
+(
+    "raceId" integer NOT NULL,
+    round integer,
+    name character varying(20) COLLATE pg_catalog."default",
+    circuit_fk integer,
+    CONSTRAINT "Race_pkey" PRIMARY KEY ("raceId"),
+    CONSTRAINT "circuitFK" FOREIGN KEY (circuit_fk)
+        REFERENCES public."CircuitDim" ("CircuitId") MATCH SIMPLE
+        ON UPDATE NO ACTION
+        ON DELETE NO ACTION
+)
+
+TABLESPACE pg_default;
+
+ALTER TABLE IF EXISTS public."RaceDim"
+    OWNER to postgres;
+
+-- Table: public.StatusDim
+
+-- DROP TABLE IF EXISTS public."StatusDim";
+
+CREATE TABLE IF NOT EXISTS public."StatusDim"
+(
+    "statusId" integer NOT NULL,
+    status character varying(255) COLLATE pg_catalog."default",
+    CONSTRAINT "Status_pkey" PRIMARY KEY ("statusId")
+)
+
+TABLESPACE pg_default;
+
+ALTER TABLE IF EXISTS public."StatusDim"
+    OWNER to postgres;
+
+-- Table: public.QualifyingFact
+
+-- DROP TABLE IF EXISTS public."QualifyingFact";
+
+CREATE TABLE IF NOT EXISTS public."QualifyingFact"
+(
+    race_fk integer,
+    driver_fk integer,
+    constructor_fk integer,
+    "number" integer,
+    "position" integer,
+    q1 integer,
+    q2 integer,
+    q3 integer,
+    CONSTRAINT "Qualify_constructorFK" FOREIGN KEY (constructor_fk)
+        REFERENCES public."ConstructorsDim" ("constructorId") MATCH SIMPLE
+        ON UPDATE NO ACTION
+        ON DELETE NO ACTION,
+    CONSTRAINT "Qualify_driverFK" FOREIGN KEY (driver_fk)
+        REFERENCES public."DriverDim" ("DriverID") MATCH SIMPLE
+        ON UPDATE NO ACTION
+        ON DELETE NO ACTION,
+    CONSTRAINT "Qualify_raceFK" FOREIGN KEY (race_fk)
+        REFERENCES public."RaceDim" ("raceId") MATCH SIMPLE
+        ON UPDATE NO ACTION
+        ON DELETE NO ACTION
+)
+
+TABLESPACE pg_default;
+
+ALTER TABLE IF EXISTS public."QualifyingFact"
+    OWNER to postgres;
+
+-- Table: public.RaceResultFact
+
+-- DROP TABLE IF EXISTS public."RaceResultFact";
+
+CREATE TABLE IF NOT EXISTS public."RaceResultFact"
+(
+    race_fk integer,
+    driver_fk integer,
+    constructor_fk integer,
+    status_fk integer,
+    datetime_fk integer,
+    points integer,
+    rank integer,
+    laps integer,
+    total_lap_duration integer,
+    fastest_lapspeed double precision,
+    total_pitstop_duration integer,
+    total_pitstop integer,
+    wins integer,
+    CONSTRAINT "constructorFK" FOREIGN KEY (constructor_fk)
+        REFERENCES public."ConstructorsDim" ("constructorId") MATCH SIMPLE
+        ON UPDATE NO ACTION
+        ON DELETE NO ACTION,
+    CONSTRAINT "datetimeFK" FOREIGN KEY (datetime_fk)
+        REFERENCES public."DateTimeDim" ("dateId") MATCH SIMPLE
+        ON UPDATE NO ACTION
+        ON DELETE NO ACTION,
+    CONSTRAINT "driverFK" FOREIGN KEY (driver_fk)
+        REFERENCES public."DriverDim" ("DriverID") MATCH SIMPLE
+        ON UPDATE NO ACTION
+        ON DELETE NO ACTION,
+    CONSTRAINT "raceFK" FOREIGN KEY (race_fk)
+        REFERENCES public."RaceDim" ("raceId") MATCH SIMPLE
+        ON UPDATE NO ACTION
+        ON DELETE NO ACTION,
+    CONSTRAINT "statusFK" FOREIGN KEY (status_fk)
+        REFERENCES public."StatusDim" ("statusId") MATCH SIMPLE
+        ON UPDATE NO ACTION
+        ON DELETE NO ACTION
+)
+
+TABLESPACE pg_default;
+
+ALTER TABLE IF EXISTS public."RaceResultFact"
+    OWNER to postgres;
