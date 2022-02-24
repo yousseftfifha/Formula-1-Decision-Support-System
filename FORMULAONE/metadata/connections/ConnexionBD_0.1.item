@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.relational="http:///orgomg/cwm/resource/relational.ecore">
+  <TalendMetadata:DatabaseConnection xmi:id="_5NKhcJTqEeytDN7zOx7c5w" name="ConnexionBD" id="_qHwBgJTqEeytDN7zOx7c5w" label="ConnexionBD" dataPackage="_EKNy8JTtEeytDN7zOx7c5w" DatabaseType="PostgreSQL" DriverClass="org.postgresql.Driver" URL="jdbc:postgresql://localhost:5432/FormulaOne?" dbVersionString="V9_X" Port="5432" Username="postgres" Password="enc:system.encryption.key.v1:nziGkziVLDdJ0vp6rsuUr3vilqLjOH1FlwmlYZL1JYtKZ1DywHbb" ServerName="localhost" DatasourceName="" FileFieldName="" SID="FormulaOne" SqlSynthax="" StringQuote="" NullChar="" DbmsId="postgres_id" ProductId="POSTGRESQL" AdditionalParams="" StandardSQL="true" SQLMode="false" UiSchema="">
+    <taggedValue xmi:id="_5NLIgJTqEeytDN7zOx7c5w" tag="Is Conn Need Reload" value="false"/>
+    <taggedValue xmi:id="_5NpCkJTqEeytDN7zOx7c5w" tag="package filter" value=""/>
+    <taggedValue xmi:id="_5N0BsJTqEeytDN7zOx7c5w" tag="Status" value=""/>
+    <taggedValue xmi:id="_5N0BsZTqEeytDN7zOx7c5w" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_5N0BspTqEeytDN7zOx7c5w" tag="Purpose" value=""/>
+    <taggedValue xmi:id="_5N0Bs5TqEeytDN7zOx7c5w" tag="Description" value=""/>
+    <taggedValue xmi:id="_5N0BtJTqEeytDN7zOx7c5w" tag="Author" value=""/>
+    <taggedValue xmi:id="_5N0BtZTqEeytDN7zOx7c5w" tag="otherParameter"/>
+    <taggedValue xmi:id="_5QErgJTqEeytDN7zOx7c5w" tag="DB ProductName" value="PostgreSQL"/>
+    <taggedValue xmi:id="_5QErgZTqEeytDN7zOx7c5w" tag="DB ProductVersion" value="14.2"/>
+    <taggedValue xmi:id="_5QErgpTqEeytDN7zOx7c5w" tag="DB IdentifierQuoteString" value="&quot;"/>
+    <parameters xmi:id="_5NLIgZTqEeytDN7zOx7c5w" key="CONN_PARA_KEY_USERNAME" value="postgres"/>
+    <parameters xmi:id="_8Sx8oJTsEeytDN7zOx7c5w" key="CONN_PARA_KEY_MAPRDB_TABLE_NS_MAPPING" value=""/>
+  </TalendMetadata:DatabaseConnection>
+  <orgomg.cwm.resource.relational:Catalog xmi:id="_EKNy8JTtEeytDN7zOx7c5w" name="FormulaOne" dataManager="_5NKhcJTqEeytDN7zOx7c5w">
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_EKNy8ZTtEeytDN7zOx7c5w" name="information_schema"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_EKNy8pTtEeytDN7zOx7c5w" name="pg_catalog"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_EKNy85TtEeytDN7zOx7c5w" name="public"/>
+  </orgomg.cwm.resource.relational:Catalog>
+</xmi:XMI>
