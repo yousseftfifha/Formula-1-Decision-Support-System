@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.relational="http:///orgomg/cwm/resource/relational.ecore" xmlns:relational="http://www.talend.org/cwm/resource/relational/2010">
+  <TalendMetadata:DatabaseConnection xmi:id="_cMkJwJTOEey0Dv5Q9uNZWA" name="cnx_d" id="_TAYuEJTOEey0Dv5Q9uNZWA" label="cnx_d" dataPackage="_Nk0ZEJTVEey0Dv5Q9uNZWA" DatabaseType="PostgreSQL" DriverClass="org.postgresql.Driver" URL="jdbc:postgresql://:5432/f1?" dbVersionString="V9_X" Port="5432" Username="postgres" Password="enc:system.encryption.key.v1:yc54dlBmPiSWLYJG1QA/wp34N5ASZBwxUeTk7n2x3yTKiw==" ServerName="" DatasourceName="" FileFieldName="" SID="f1" SqlSynthax="" StringQuote="" NullChar="" DbmsId="postgres_id" ProductId="POSTGRESQL" AdditionalParams="" StandardSQL="true" SQLMode="false" UiSchema="">
+    <taggedValue xmi:id="_cMkJwZTOEey0Dv5Q9uNZWA" tag="Is Conn Need Reload" value="false"/>
+    <taggedValue xmi:id="_cMyMMJTOEey0Dv5Q9uNZWA" tag="package filter" value=""/>
+    <taggedValue xmi:id="_cMyMMZTOEey0Dv5Q9uNZWA" tag="Status" value=""/>
+    <taggedValue xmi:id="_cMyMMpTOEey0Dv5Q9uNZWA" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_cMyMM5TOEey0Dv5Q9uNZWA" tag="Purpose" value=""/>
+    <taggedValue xmi:id="_cMyMNJTOEey0Dv5Q9uNZWA" tag="Description" value=""/>
+    <taggedValue xmi:id="_cMyMNZTOEey0Dv5Q9uNZWA" tag="Author" value=""/>
+    <taggedValue xmi:id="_cMyMNpTOEey0Dv5Q9uNZWA" tag="otherParameter"/>
+    <taggedValue xmi:id="_cONIgJTOEey0Dv5Q9uNZWA" tag="DB ProductName" value="PostgreSQL"/>
+    <taggedValue xmi:id="_cONIgZTOEey0Dv5Q9uNZWA" tag="DB ProductVersion" value="14.2"/>
+    <taggedValue xmi:id="_cONIgpTOEey0Dv5Q9uNZWA" tag="DB IdentifierQuoteString" value="&quot;"/>
+    <parameters xmi:id="_cMkJwpTOEey0Dv5Q9uNZWA" key="CONN_PARA_KEY_USERNAME" value="postgres"/>
+    <parameters xmi:id="_LUsJgJTVEey0Dv5Q9uNZWA" key="CONN_PARA_KEY_MAPRDB_TABLE_NS_MAPPING" value=""/>
+  </TalendMetadata:DatabaseConnection>
+  <orgomg.cwm.resource.relational:Catalog xmi:id="_Nk0ZEJTVEey0Dv5Q9uNZWA" name="f1" dataManager="_cMkJwJTOEey0Dv5Q9uNZWA">
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_Nk0ZEZTVEey0Dv5Q9uNZWA" name="information_schema"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_Nk0ZEpTVEey0Dv5Q9uNZWA" name="pg_catalog"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_Nk0ZE5TVEey0Dv5Q9uNZWA" name="public">
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_KccoAZTXEey0Dv5Q9uNZWA" name="DateTimeDim" id="_KccoAJTXEey0Dv5Q9uNZWA" label="DateTimeDim" tableType="TABLE">
+        <feature xsi:type="relational:TdColumn" xmi:id="_KccoApTXEey0Dv5Q9uNZWA" name="dateId" label="dateId" length="10" sourceType="INT4" talendType="id_Integer" key="true" nullable="false">
+          <taggedValue xmi:id="_KccoA5TXEey0Dv5Q9uNZWA" tag="Comment" value=""/>
+          <initialValue xsi:type="relational:TdExpression" xmi:id="_KccoBJTXEey0Dv5Q9uNZWA" language="COLUMN_DEF"/>
+          <sqlDataType xmi:id="_KccoBZTXEey0Dv5Q9uNZWA" name="INT4" numericPrecisionRadix="10" javaDataType="4"/>
+        </feature>
+        <feature xsi:type="relational:TdColumn" xmi:id="_KccoBpTXEey0Dv5Q9uNZWA" name="date" label="date" length="13" sourceType="DATE" talendType="id_Date" pattern="&quot;dd-MM-yyyy&quot;">
+          <taggedValue xmi:id="_KccoB5TXEey0Dv5Q9uNZWA" tag="Comment" value=""/>
+          <initialValue xsi:type="relational:TdExpression" xmi:id="_KccoCJTXEey0Dv5Q9uNZWA" language="COLUMN_DEF"/>
+          <sqlDataType xmi:id="_KccoCZTXEey0Dv5Q9uNZWA" name="DATE" numericPrecisionRadix="10" javaDataType="91" nullable="columnNullable"/>
+        </feature>
+        <feature xsi:type="relational:TdColumn" xmi:id="_KccoCpTXEey0Dv5Q9uNZWA" name="day" label="day" length="10" sourceType="INT4" talendType="id_Integer">
+          <taggedValue xmi:id="_KccoC5TXEey0Dv5Q9uNZWA" tag="Comment" value=""/>
+          <initialValue xsi:type="relational:TdExpression" xmi:id="_KccoDJTXEey0Dv5Q9uNZWA" language="COLUMN_DEF"/>
+          <sqlDataType xmi:id="_KccoDZTXEey0Dv5Q9uNZWA" name="INT4" numericPrecisionRadix="10" javaDataType="4" nullable="columnNullable"/>
+        </feature>
+        <feature xsi:type="relational:TdColumn" xmi:id="_KccoDpTXEey0Dv5Q9uNZWA" name="month" label="month" length="10" sourceType="INT4" talendType="id_Integer">
+          <taggedValue xmi:id="_KccoD5TXEey0Dv5Q9uNZWA" tag="Comment" value=""/>
+          <initialValue xsi:type="relational:TdExpression" xmi:id="_KccoEJTXEey0Dv5Q9uNZWA" language="COLUMN_DEF"/>
+          <sqlDataType xmi:id="_KccoEZTXEey0Dv5Q9uNZWA" name="INT4" numericPrecisionRadix="10" javaDataType="4" nullable="columnNullable"/>
+        </feature>
+        <feature xsi:type="relational:TdColumn" xmi:id="_KccoEpTXEey0Dv5Q9uNZWA" name="year" label="year" length="10" sourceType="INT4" talendType="id_Integer">
+          <taggedValue xmi:id="_KccoE5TXEey0Dv5Q9uNZWA" tag="Comment" value=""/>
+          <initialValue xsi:type="relational:TdExpression" xmi:id="_KccoFJTXEey0Dv5Q9uNZWA" language="COLUMN_DEF"/>
+          <sqlDataType xmi:id="_KccoFZTXEey0Dv5Q9uNZWA" name="INT4" numericPrecisionRadix="10" javaDataType="4" nullable="columnNullable"/>
+        </feature>
+        <feature xsi:type="relational:TdColumn" xmi:id="_KccoFpTXEey0Dv5Q9uNZWA" name="time" label="time" length="15" precision="6" sourceType="TIME" talendType="id_Date" pattern="&quot;dd-MM-yyyy&quot;">
+          <taggedValue xmi:id="_KccoF5TXEey0Dv5Q9uNZWA" tag="Comment" value=""/>
+          <initialValue xsi:type="relational:TdExpression" xmi:id="_KccoGJTXEey0Dv5Q9uNZWA" language="COLUMN_DEF"/>
+          <sqlDataType xmi:id="_KccoGZTXEey0Dv5Q9uNZWA" name="TIME" numericPrecision="6" numericPrecisionRadix="10" javaDataType="92" nullable="columnNullable"/>
+        </feature>
+      </ownedElement>
+    </ownedElement>
+  </orgomg.cwm.resource.relational:Catalog>
+</xmi:XMI>

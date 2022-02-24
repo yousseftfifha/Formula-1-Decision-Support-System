@@ -1,0 +1,89 @@
+[ {
+  "baseItem" : {
+    "id" : "_GRYeIJTJEey0Dv5Q9uNZWA",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_TAYuEJTOEey0Dv5Q9uNZWA",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_TAYuEJTOEey0Dv5Q9uNZWA - DateTimeDim",
+    "version" : "Latest",
+    "type" : "schema"
+  } ]
+}, {
+  "baseItem" : {
+    "id" : "_QKNNUGZ8EeWm5YvsrIoYzQ",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "DQTechnical",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "DataQuality",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "DemoRoutines",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "DqStringHandling",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "GetRandomPhoneNum",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "MDM",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "SQLike",
+    "version" : "Latest",
+    "type" : "routine"
+  } ]
+}, {
+  "baseItem" : {
+    "id" : "_T9cmgJS-Eeybprw1fPCbvQ",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_3HrP4JTPEeybprw1fPCbvQ",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_VMPU4JS-Eeybprw1fPCbvQ",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_3HrP4JTPEeybprw1fPCbvQ - circuits",
+    "version" : "Latest",
+    "type" : "schema"
+  } ]
+}, {
+  "baseItem" : {
+    "id" : "_vSk_IJQPEeyhHKjvt23rxw",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_WtVXYJTCEeyeLYCAq_ccYg",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_zdmBQJTDEeyeLYCAq_ccYg",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_WtVXYJTCEeyeLYCAq_ccYg - metadata",
+    "version" : "Latest",
+    "type" : "schema"
+  } ]
+} ]
