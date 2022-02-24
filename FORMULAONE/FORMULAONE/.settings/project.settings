@@ -67,7 +67,7 @@
         "show" : true,
         "field" : "DIRECTORY",
         "name" : "FILE_PATH",
-        "value" : "\"C:/Program Files (x86)/TOS_DI-8.0.1/studio/workspace/.metadata\"",
+        "value" : "\"C:/Users/Nour/Desktop/WorkspaceTalend/.metadata\"",
         "contextMode" : false
       }, {
         "show" : true,
@@ -180,7 +180,7 @@
         "show" : true,
         "field" : "PASSWORD",
         "name" : "PASS",
-        "value" : "enc:system.encryption.key.v1:D06qNbCUOiaWNQq/mYGdrmaGtgwcV+LF8SJNtVdO",
+        "value" : "enc:system.encryption.key.v1:6AQqervMytpNZdoDxLR9VOlqPVXufr4Uqny+S/2e",
         "contextMode" : false
       }, {
         "show" : true,
@@ -388,7 +388,7 @@
         "show" : true,
         "field" : "PASSWORD",
         "name" : "PASS_IMPLICIT_CONTEXT",
-        "value" : "enc:system.encryption.key.v1:Uit277KC0Wt9834LYkhpbO3rIQUqmflRDAUTG1GB",
+        "value" : "enc:system.encryption.key.v1:MT+pUaefQXPQd7TE+6e2Ew8dMBKmHEYB4waedtn1",
         "contextMode" : false
       }, {
         "show" : true,
