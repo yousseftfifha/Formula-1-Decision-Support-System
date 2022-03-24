@@ -7,13 +7,13 @@
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_oBG79ZoKEeyvbO_U8kFvaA" label="raceId" length="2" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_oBG79poKEeyvbO_U8kFvaA" label="driverId" length="2" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_oBG795oKEeyvbO_U8kFvaA" label="constructorId" length="2" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_oBG7-JoKEeyvbO_U8kFvaA" label="number" length="2" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_oBG7-JoKEeyvbO_U8kFvaA" label="number" length="-1" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_oBG7-ZoKEeyvbO_U8kFvaA" label="positionOrder" length="2" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_oBG7-poKEeyvbO_U8kFvaA" label="points" length="2" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_oBG7-poKEeyvbO_U8kFvaA" label="points" length="-1" talendType="id_Double" pattern="&quot;dd-MM-yyyy&quot;"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_oBG7-5oKEeyvbO_U8kFvaA" label="laps" length="2" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_oBG7_JoKEeyvbO_U8kFvaA" label="time" length="11" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_oBG7_ZoKEeyvbO_U8kFvaA" label="rank" length="2" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_oBG7_poKEeyvbO_U8kFvaA" label="fastestLapSpeed" length="7" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_oBG7_poKEeyvbO_U8kFvaA" label="fastestLapSpeed" length="-1" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_oBG7_5oKEeyvbO_U8kFvaA" label="statusId" length="2" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
     </ownedElement>
   </orgomg.cwm.resource.record:RecordFile>
