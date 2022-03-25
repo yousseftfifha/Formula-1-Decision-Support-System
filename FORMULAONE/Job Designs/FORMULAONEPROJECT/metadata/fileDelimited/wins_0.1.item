@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendMetadata:DelimitedFileConnection xmi:id="_BTCPQJlzEeygd8z1VQCHTw" name="wins" dataPackage="_BTCPQZlzEeygd8z1VQCHTw" Server="Localhost 127.0.0.1" FilePath="C:/Users/Youssef Tfifhq/Documents/Supports de cours , projets et examens/4ERP-BI/PBI/Formula 1/driver_standings.csv" Format="WINDOWS" Encoding="windows-1252" FieldSeparatorValue="&quot;,&quot;" RowSeparatorValue="&quot;\n&quot;" UseHeader="true" HeaderValue="1" FirstLineCaption="true" EscapeType="CSV" CsvOption="true" FieldSeparatorType="Comma"/>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_BTCPQZlzEeygd8z1VQCHTw" name="default" dataManager="_BTCPQJlzEeygd8z1VQCHTw">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_BTCPQplzEeygd8z1VQCHTw" id="_7SZigJlyEeygd8z1VQCHTw" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_BTCPQ5lzEeygd8z1VQCHTw" label="driverStandingsId" length="2" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_BTCPRJlzEeygd8z1VQCHTw" label="raceId" length="2" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_BTCPRZlzEeygd8z1VQCHTw" label="driverId" length="2" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_BTCPRplzEeygd8z1VQCHTw" label="points" length="-1" talendType="id_Double" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_BTCPR5lzEeygd8z1VQCHTw" label="position" length="2" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_BTCPSJlzEeygd8z1VQCHTw" label="wins" length="1" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>
