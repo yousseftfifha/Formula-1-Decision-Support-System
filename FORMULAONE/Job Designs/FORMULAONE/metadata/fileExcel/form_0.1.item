@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendMetadata:FileExcelConnection xmi:id="_A330IKx1EeyeTaRIshQ8yg" name="form" dataPackage="_A330Iax1EeyeTaRIshQ8yg" Server="Localhost 127.0.0.1" FilePath="C:/Users/Youssef Tfifhq/Documents/Supports de cours , projets et examens/4ERP-BI/PBI/Formula 1/Formula One Survey (réponses).xlsx" Encoding="UTF-8" UseHeader="true" HeaderValue="1" FirstLineCaption="true" SheetName="Réponses au formulaire 1" firstColumn="1" thousandSeparator="','" decimalSeparator="'.'" selectAllSheets="true" sheetList="Réponses au formulaire 1:w&#xA;">
+    <sheetColumns>A</sheetColumns>
+    <sheetColumns>B</sheetColumns>
+    <sheetColumns>C</sheetColumns>
+    <sheetColumns>D</sheetColumns>
+    <sheetColumns>E</sheetColumns>
+    <sheetColumns>F</sheetColumns>
+    <sheetColumns>G</sheetColumns>
+    <sheetColumns>H</sheetColumns>
+    <sheetColumns>I</sheetColumns>
+    <sheetColumns>J</sheetColumns>
+    <sheetColumns>K</sheetColumns>
+    <sheetColumns>L</sheetColumns>
+    <sheetColumns>M</sheetColumns>
+    <sheetColumns>N</sheetColumns>
+    <sheetColumns>O</sheetColumns>
+    <sheetColumns>P</sheetColumns>
+    <sheetColumns>Q</sheetColumns>
+    <sheetColumns>R</sheetColumns>
+  </TalendMetadata:FileExcelConnection>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_A330Iax1EeyeTaRIshQ8yg" name="default" dataManager="_A330IKx1EeyeTaRIshQ8yg">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_A330Iqx1EeyeTaRIshQ8yg" id="_uSDIgKx0EeyeTaRIshQ8yg" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_A330I6x1EeyeTaRIshQ8yg" label="Horodateur" length="28" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_A330JKx1EeyeTaRIshQ8yg" label="Are_you_a_Formula_One_fan" length="3" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_A330Jax1EeyeTaRIshQ8yg" label="How_long_have_you_been_following_F1" length="18" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_A330Jqx1EeyeTaRIshQ8yg" label="How_would_you_rate_your_follow_up_of_the_F1_competitions" length="1" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_A330J6x1EeyeTaRIshQ8yg" label="What_is_the_main_reason_you_watch_Formula_1" length="179" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_A330KKx1EeyeTaRIshQ8yg" label="Who_is_your_favorite_constructor" length="12" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_A330Kax1EeyeTaRIshQ8yg" label="Who_is_your_favorite_pilot" length="18" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_A330Kqx1EeyeTaRIshQ8yg" label="Does_the_sponsor_constructor_combination_impacts_your_F1_follow_up" length="3" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_A330K6x1EeyeTaRIshQ8yg" label="Which_of_the_sponsors_that_will_impact_your_F1_following__if_no_longer_involved" length="42" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_A330LKx1EeyeTaRIshQ8yg" label="What_types_of_F1_content_would_you_like_to_see" length="199" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_A330Lax1EeyeTaRIshQ8yg" label="What_would_you_be_interested_in_after_the_race" length="82" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_A330Lqx1EeyeTaRIshQ8yg" label="Which_driver_do_you_think_will_have_promising_performance_growth_in_the_coming_seasons" length="42" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_A330L6x1EeyeTaRIshQ8yg" label="What_do_you_think_makes_a_good_pilot___Performance" length="118" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_A330MKx1EeyeTaRIshQ8yg" label="Which_sponsor_would_you_like_to_see_join_the_world_of_Formula_One" length="260" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_A330Max1EeyeTaRIshQ8yg" label="Why_you_are_not_interested_in_F1" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_A330Mqx1EeyeTaRIshQ8yg" label="Which_of_these_elements_can_encourage_you_to_follow_the_F1_world" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_A330M6x1EeyeTaRIshQ8yg" label="What_is_your_gender" length="21" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_A330NKx1EeyeTaRIshQ8yg" label="What_is_your_age" length="14" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>
