@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendMetadata:DelimitedFileConnection xmi:id="_CAnKkLi6EeyvX89-7T_E-w" name="penalitymatced" dataPackage="_CAnKkbi6EeyvX89-7T_E-w" Server="Localhost 127.0.0.1" FilePath="C:/Users/Youssef Tfifhq/Documents/Supports de cours , projets et examens/4ERP-BI/PBI/Scraping &amp; Streaming/penaltiesMatched.csv" Format="WINDOWS" Encoding="US-ASCII" FieldSeparatorValue="&quot;,&quot;" RowSeparatorValue="&quot;\n&quot;" UseHeader="true" HeaderValue="1" FirstLineCaption="true" EscapeType="CSV" CsvOption="true" FieldSeparatorType="Comma"/>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_CAnKkbi6EeyvX89-7T_E-w" name="default" dataManager="_CAnKkLi6EeyvX89-7T_E-w">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_CAnKkri6EeyvX89-7T_E-w" id="_78wxwLi5EeyvX89-7T_E-w" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_CAnKk7i6EeyvX89-7T_E-w" label="DriverID" length="3" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_CAnKlLi6EeyvX89-7T_E-w" label="DriverRef" length="9" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_CAnKlbi6EeyvX89-7T_E-w" label="Number" length="2" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_CAnKlri6EeyvX89-7T_E-w" label="driverCode" length="3" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_CAnKl7i6EeyvX89-7T_E-w" label="ForeName" length="10" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_CAnKmLi6EeyvX89-7T_E-w" label="SurName" length="9" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_CAnKmbi6EeyvX89-7T_E-w" label="Dob" length="10" talendType="id_Date" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_CAnKmri6EeyvX89-7T_E-w" label="Nationality" length="10" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_CAnKm7i6EeyvX89-7T_E-w" label="points" length="5" precision="2" talendType="id_Float" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_CAnKnLi6EeyvX89-7T_E-w" label="car" length="21" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_CAnKnbi6EeyvX89-7T_E-w" label="Driver" length="17" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_CAnKnri6EeyvX89-7T_E-w" label="Event" length="24" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_CAnKn7i6EeyvX89-7T_E-w" label="Date" length="4" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_CAnKoLi6EeyvX89-7T_E-w" label="Points_1" length="1" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_CAnKobi6EeyvX89-7T_E-w" label="Reason" length="64" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_CAnKori6EeyvX89-7T_E-w" label="First" length="10" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_CAnKo7i6EeyvX89-7T_E-w" label="last" length="10" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>
