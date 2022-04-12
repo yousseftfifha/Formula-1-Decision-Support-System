@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendMetadata:FileExcelConnection xmi:id="_5bRtsLqAEeyChOGj_UFvvQ" name="lap" id="_5bM1MLqAEeyChOGj_UFvvQ" dataPackage="_5bRtsbqAEeyChOGj_UFvvQ" Server="Localhost 127.0.0.1" FilePath="C:/Users/Youssef Tfifhq/Documents/Supports de cours , projets et examens/4ERP-BI/PBI/Formula 1/laptime.xlsx" Encoding="windows-1252" UseHeader="true" HeaderValue="1" FirstLineCaption="true" SheetName="Sheet1" firstColumn="1" thousandSeparator="','" decimalSeparator="'.'" selectAllSheets="true" sheetList="Sheet1:w&#xA;">
+    <sheetColumns>A</sheetColumns>
+    <sheetColumns>B</sheetColumns>
+    <sheetColumns>C</sheetColumns>
+  </TalendMetadata:FileExcelConnection>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_5bRtsbqAEeyChOGj_UFvvQ" name="default" dataManager="_5bRtsLqAEeyChOGj_UFvvQ">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_5bRtsrqAEeyChOGj_UFvvQ" id="_or3xILqAEeyChOGj_UFvvQ" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_5bRts7qAEeyChOGj_UFvvQ" label="RaceFK" length="4" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_5bRttLqAEeyChOGj_UFvvQ" label="DriverFK" length="3" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_5bRttbqAEeyChOGj_UFvvQ" label="Hours" length="12" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>
