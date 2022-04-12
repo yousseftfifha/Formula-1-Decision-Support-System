@@ -52,6 +52,10 @@
     "version" : "Latest",
     "type" : "schema"
   }, {
+    "id" : "_VMPU4JS-Eeybprw1fPCbvQ - PenalityDim",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
     "id" : "_VMPU4JS-Eeybprw1fPCbvQ - RaceDim",
     "version" : "Latest",
     "type" : "schema"
@@ -223,6 +227,14 @@
     "type" : "property"
   }, {
     "id" : "_CAmjgLi6EeyvX89-7T_E-w - metadata",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_VMPU4JS-Eeybprw1fPCbvQ - DateTimeDim",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_VMPU4JS-Eeybprw1fPCbvQ - DriverDim",
     "version" : "Latest",
     "type" : "schema"
   }, {
