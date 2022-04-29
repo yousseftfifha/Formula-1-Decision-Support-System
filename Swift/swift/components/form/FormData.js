@@ -7,7 +7,7 @@ const FormData = () => {
 
                 <div className="flex flex-col space-y-6 md:space-y-0 md:flex-row justify-between">
                     <div className="mr-6">
-                        <h1 className="text-4xl font-semibold mb-2">Form</h1>
+                        <h1 className="text-4xl font-semibold mb-2">Data Collection</h1>
                         {/* eslint-disable-next-line react/no-unescaped-entities */}
                         <h2 className="text-gray-600 ml-0.5">Contribute to our cause by sharing your opinion with us </h2>
                     </div>

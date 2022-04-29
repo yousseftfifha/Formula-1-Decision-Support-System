@@ -4,7 +4,7 @@ import FormData from "../components/form/FormData";
 
 export default function Form() {
     return (
-        <Layout title='Form'>
+        <Layout title='Data Collection'>
             <FormData />
         </Layout>
     )
