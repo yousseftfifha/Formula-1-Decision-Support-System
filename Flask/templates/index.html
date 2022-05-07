@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html >
+<!--From https://codepen.io/frytyler/pen/EGdtg-->
+<head>
+  <meta charset="UTF-8">
+  <title>ML API</title>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+</head>
+
+<body>
+ <div class="login">
+
+<h1>Predict Driver Performance In Race session </h1>
+
+     <!-- Main Input For Receiving Query to our ML -->
+    <form action="{{ url_for('predictRace')}}"method="post">
+        <input type="text" name="Code" placeholder="Code" list="Code">
+        <datalist id="Code">
+            <option value="11" label="HAM">
+            <option value="43" label="VET">
+            <option value="3" label="BOT">
+            <option value="30" label="RAI">
+            <option value="41" label="VER">
+            <option value="32" label="ROS">
+            <option value="18" label="LEC">
+            <option value="26" label="NOR">
+            <option value="21" label="MAS">
+            <option value="31" label="RIC">
+            <option value="1" label="ALB">
+            <option value="35" label="SAI">
+            <option value="27" label="OCO">
+
+        </datalist>
+         <input type="text" name="Nationality" placeholder="Nationality" list="Nationality">
+        <datalist id="Nationality">
+            <option value="4" label="British">
+            <option value="10" label="German">
+            <option value="8" label="Finnish">
+            <option value="7" label="Dutch">
+            <option value="9" label="French">
+            <option value="15" label="Monegasque">
+            <option value="19" label="Spanish">
+            <option value="3" label="Brazilian">
+            <option value="1" label="Australian">
+            <option value="21" label="Thai">
+            <option value="17" label="Polish">
+
+        </datalist>
+        <input type="text" name="points" placeholder="points" required="required" />
+        <input type="text" name="age" placeholder="age" required="required" />
+
+        <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+    </form>
+     <br>
+   <br>
+   {{ DriverRaceP }}
+<h1>Predict Constructor Performance In Race session</h1>
+
+     <!-- Main Input For Receiving Query to our ML -->
+    <form action="{{ url_for('predictConstructor')}}"method="post">
+        <input type="text" name="constructorName" placeholder="constructorName" list="constructorName">
+        <datalist id="constructorName">
+            <option value="10" label="Mercedes">
+            <option value="5" label="Red Bull	">
+            <option value="4" label="Ferrari">
+            <option value="6" label="Force India">
+            <option value="14" label="Lotus F1	">
+            <option value="0" label="McLaren">
+            <option value="17" label="Racing Point">
+            <option value="19" label="Alpine F1 Team">
+            <option value="18" label="AlphaTauri">
+            <option value="2" label="Renault">
+            <option value="9" label="Aston Martin">
+            <option value="1" label="Williams">
+            <option value="3" label="Toro Rosso	">
+            <option value="16" label="Haas F1 Team">
+            <option value="7" label="Sauber">
+
+        </datalist>
+         <input type="text" name="constructorNationality" placeholder="constructorNationality" list="constructorNationality">
+        <datalist id="constructorNationality">
+            <option value="4" label="German">
+            <option value="1" label="Austrian">
+            <option value="6" label="Italian">
+            <option value="5" label="Indian">
+            <option value="2" label="British">
+            <option value="3" label="French">
+            <option value="0" label="American">
+            <option value="10" label="Swiss">
+
+
+        </datalist>
+        <input type="text" name="horsepower" placeholder="horsepower" required="required" />
+        <input type="text" name="weight" placeholder="weight" required="required" />
+        <input type="text" name="acceleration" placeholder="acceleration" required="required" />
+
+        <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+    </form>
+   <br>
+   <br>
+   {{ ConstructorRaceP }}
+<h1>Predict Driver Performance In Qualifying session</h1>
+     <!-- Main Input For Receiving Query to our ML -->
+    <form action="{{ url_for('predict')}}"method="post">
+
+        <input type="text" name="Code" placeholder="Code" list="Code">
+        <datalist id="Code">
+            <option value="13" label="HAM">
+            <option value="49" label="VET">
+            <option value="4" label="BOT">
+            <option value="34" label="RAI">
+            <option value="4" label="VER">
+            <option value="36" label="ROS">
+            <option value="21" label="LEC">
+            <option value="2" label="ALO">
+            <option value="25" label="MAS">
+            <option value="35" label="RIC">
+            <option value="1" label="ALB">
+            <option value="18" label="KUB">
+            <option value="30" label="NOR">
+
+        </datalist>
+         <input type="text" name="Nationality" placeholder="Nationality" list="Nationality">
+        <datalist id="Nationality">
+            <option value="4" label="British">
+            <option value="10" label="German">
+            <option value="8" label="Finnish">
+            <option value="7" label="Dutch">
+            <option value="9" label="French">
+            <option value="15" label="Monegasque">
+            <option value="19" label="Spanish">
+            <option value="3" label="Brazilian">
+            <option value="1" label="Australian">
+            <option value="21" label="Thai">
+            <option value="17" label="Polish">
+
+        </datalist>
+        <input type="text" name="points" placeholder="points" required="required" />
+        <input type="text" name="age" placeholder="age" required="required" />
+
+        <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+    </form>
+
+
+   <br>
+   <br>
+   {{ DriverQualifyingP }}
+
+ </div>
+
+
+</body>
+</html>
