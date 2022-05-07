@@ -7,6 +7,7 @@ app = Flask(__name__)
 PerfomancePredictormodel = pickle.load(open('performancePredictor.pkl', 'rb'))
 PerfomancePredictorInRacemodel = pickle.load(open('performancePredictorInRace.pkl', 'rb'))
 ConstructorperformancePredictorInRacemodel = pickle.load(open('ConstructorperformancePredictorInRace.pkl', 'rb'))
+Knnmodel = pickle.load(open('Knn.pkl', 'rb'))
 
 @app.route('/')
 def home():
@@ -25,7 +26,7 @@ def predict():
     # output = [float(np.round(x)) for x in prediction]
 
 
-    return render_template('index.html', DriverQualifyingP=' Predicted Performance 🥁🥁 : {} '.format(int(prediction)))
+    return render_template('index.html', DriverQualifyingP=' Predicted Performance 🥁🥁 : {} '.format(int(prediction))+'%')
 @app.route('/predictConstructor',methods=['POST'])
 def predictConstructor():
     '''
@@ -39,7 +40,7 @@ def predictConstructor():
     # output = [float(np.round(x)) for x in prediction]
 
 
-    return render_template('index.html', ConstructorRaceP=' Predicted Constructor Performance 🥁🥁 : {} '.format(int(prediction)))
+    return render_template('index.html', ConstructorRaceP=' Predicted Constructor Performance 🥁🥁 : {} '.format(int(prediction))+'%')
 
 @app.route('/predictRace',methods=['POST'])
 def predictRace():
@@ -54,7 +55,23 @@ def predictRace():
     # output = [float(np.round(x)) for x in prediction]
 
 
-    return render_template('index.html', DriverRaceP=' Predicted Performance 🥁🥁 : {} '.format(int(prediction)))
+    return render_template('index.html', DriverRaceP=' Predicted Performance 🥁🥁 : {} '.format(int(prediction))+'%')
+
+
+@app.route('/classifier',methods=['POST'])
+def classifier():
+    '''
+    For rendering results on HTML GUI
+    '''
+    int_features = [float(x) for x in request.form.values()]
+    final_features = [np.array(int_features)]
+    prediction = Knnmodel.predict(final_features)
+
+    # output = round(prediction[0],3)
+    # output = [float(np.round(x)) for x in prediction]
+
+
+    return render_template('index.html', DriverClass=' Predicted Class 🥁🥁 : {} '.format(int(prediction)))
 
 # @app.route('/predict_api',methods=['POST'])
 # def predict_api():

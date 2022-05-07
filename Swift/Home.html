@@ -104,7 +104,7 @@
   </section><!--/#services-->
   <section id="features" class="parallax">
     <div class="container">
-      <h1>Predict Drivers Performances in Qualifying session</h1>
+      <h1>Predictions</h1>
     </div>
   </section><!--/#features-->
 
@@ -117,7 +117,7 @@
             <iframe
                     title="F1"
                     width="1840"
-                    height="2500"
+                    height="3200"
                     src="http://127.0.0.1:5000"
                     frameBorder="0"
                     allowFullScreen></iframe>
@@ -127,112 +127,116 @@
       </div>
       <div class="container">
         <h1>Association rules between position in Qualifying session (q) and in Race session  (r)</h1>
-        <table class="table table-bordered table-hover table-condensed">
-          <thead><tr><th title="Field #1">antecedents</th>
-            <th title="Field #2">consequents</th>
-            <th title="Field #3">confidence</th>
+        <table class="table table-bordered table-hover table-condensed sortable">
+          <colgroup width="207"></colgroup>
+          <colgroup width="162"></colgroup>
+          <colgroup width="64"></colgroup>
+          <thead><tr><th title="Field #1">Position in Qualifying</th>
+            <th title="Field #2">Rank in Race</th>
+            <th title="Field #3">Probability</th>
           </tr></thead>
-          <tbody><tr>
-            <td>1 in q</td>
-            <td>1 in race</td>
-            <td>0.5491803278688525</td>
-          </tr>
-          <tr>
-            <td>2 in q</td>
-            <td>1 in race</td>
-            <td>0.2622950819672131</td>
-          </tr>
-          <tr>
-            <td>19 in q</td>
-            <td>15 in race</td>
-            <td>0.2136752136752137</td>
-          </tr>
-          <tr>
-            <td>5 in q</td>
-            <td>4 in race</td>
-            <td>0.1896551724137931</td>
-          </tr>
-          <tr>
-            <td>14 in q</td>
-            <td>10 in race</td>
-            <td>0.1694915254237288</td>
-          </tr>
-          <tr>
-            <td>20 in q</td>
-            <td>15 in race</td>
-            <td>0.1442307692307692</td>
-          </tr>
-          <tr>
-            <td>12 in q</td>
-            <td>10 in race</td>
-            <td>0.1351351351351351</td>
-          </tr>
-          <tr>
-            <td>17 in q</td>
-            <td>11 in race</td>
-            <td>0.1271186440677966</td>
-          </tr>
-          <tr>
-            <td>3 in q</td>
-            <td>1 in race</td>
-            <td>0.125</td>
-          </tr>
-          <tr>
-            <td>7 in q</td>
-            <td>5 in race</td>
-            <td>0.125</td>
-          </tr>
-          <tr>
-            <td>13 in q</td>
-            <td>12 in race</td>
-            <td>0.1228070175438597</td>
-          </tr>
-          <tr>
-            <td>16 in q</td>
-            <td>11 in race</td>
-            <td>0.1217391304347826</td>
-          </tr>
-          <tr>
-            <td>10 in q</td>
-            <td>13 in race</td>
-            <td>0.1196581196581197</td>
-          </tr>
-          <tr>
-            <td>6 in q</td>
-            <td>3 in race</td>
-            <td>0.1176470588235294</td>
-          </tr>
-          <tr>
-            <td>4 in q</td>
-            <td>2 in race</td>
-            <td>0.1166666666666667</td>
-          </tr>
-          <tr>
-            <td>8 in q</td>
-            <td>7 in race</td>
-            <td>0.1166666666666667</td>
-          </tr>
-          <tr>
-            <td>15 in q</td>
-            <td>13 in race</td>
-            <td>0.1150442477876106</td>
-          </tr>
-          <tr>
-            <td>11 in q</td>
-            <td>9 in race</td>
-            <td>0.1092436974789916</td>
-          </tr>
-          <tr>
-            <td>18 in q</td>
-            <td>13 in race</td>
-            <td>0.1092436974789916</td>
-          </tr>
-          <tr>
-            <td>9 in q</td>
-            <td>10 in race</td>
-            <td>0.1092436974789916</td>
-          </tr>
-          </tbody></table>
+
+            <tr>
+              <td height="20" align="left" valign=bottom><font color="#000000">1 in Qualifying</font></td>
+              <td align="left" valign=bottom><font color="#000000">1 in race</font></td>
+              <td align="right" valign=bottom sdval="0.54918032786885" sdnum="1033;0;0%"><font color="#000000">55%</font></td>
+            </tr>
+            <tr>
+              <td height="20" align="left" valign=bottom><font color="#000000">2 in Qualifying</font></td>
+              <td align="left" valign=bottom><font color="#000000">1 in race</font></td>
+              <td align="right" valign=bottom sdval="0.26229508196721" sdnum="1033;0;0%"><font color="#000000">26%</font></td>
+            </tr>
+            <tr>
+              <td height="20" align="left" valign=bottom><font color="#000000">19 in Qualifying</font></td>
+              <td align="left" valign=bottom><font color="#000000">15 in race</font></td>
+              <td align="right" valign=bottom sdval="0.21367521367521" sdnum="1033;0;0%"><font color="#000000">21%</font></td>
+            </tr>
+            <tr>
+              <td height="20" align="left" valign=bottom><font color="#000000">5 in Qualifying</font></td>
+              <td align="left" valign=bottom><font color="#000000">4 in race</font></td>
+              <td align="right" valign=bottom sdval="0.18965517241379" sdnum="1033;0;0%"><font color="#000000">19%</font></td>
+            </tr>
+            <tr>
+              <td height="20" align="left" valign=bottom><font color="#000000">14 in Qualifying</font></td>
+              <td align="left" valign=bottom><font color="#000000">10 in race</font></td>
+              <td align="right" valign=bottom sdval="0.16949152542373" sdnum="1033;0;0%"><font color="#000000">17%</font></td>
+            </tr>
+            <tr>
+              <td height="20" align="left" valign=bottom><font color="#000000">20 in Qualifying</font></td>
+              <td align="left" valign=bottom><font color="#000000">15 in race</font></td>
+              <td align="right" valign=bottom sdval="0.14423076923077" sdnum="1033;0;0%"><font color="#000000">14%</font></td>
+            </tr>
+            <tr>
+              <td height="20" align="left" valign=bottom><font color="#000000">12 in Qualifying</font></td>
+              <td align="left" valign=bottom><font color="#000000">10 in race</font></td>
+              <td align="right" valign=bottom sdval="0.13513513513514" sdnum="1033;0;0%"><font color="#000000">14%</font></td>
+            </tr>
+            <tr>
+              <td height="20" align="left" valign=bottom><font color="#000000">17 in Qualifying</font></td>
+              <td align="left" valign=bottom><font color="#000000">11 in race</font></td>
+              <td align="right" valign=bottom sdval="0.1271186440678" sdnum="1033;0;0%"><font color="#000000">13%</font></td>
+            </tr>
+            <tr>
+              <td height="20" align="left" valign=bottom><font color="#000000">3 in Qualifying</font></td>
+              <td align="left" valign=bottom><font color="#000000">1 in race</font></td>
+              <td align="right" valign=bottom sdval="0.125" sdnum="1033;0;0%"><font color="#000000">13%</font></td>
+            </tr>
+            <tr>
+              <td height="20" align="left" valign=bottom><font color="#000000">7 in Qualifying</font></td>
+              <td align="left" valign=bottom><font color="#000000">5 in race</font></td>
+              <td align="right" valign=bottom sdval="0.125" sdnum="1033;0;0%"><font color="#000000">13%</font></td>
+            </tr>
+            <tr>
+              <td height="20" align="left" valign=bottom><font color="#000000">13 in Qualifying</font></td>
+              <td align="left" valign=bottom><font color="#000000">12 in race</font></td>
+              <td align="right" valign=bottom sdval="0.12280701754386" sdnum="1033;0;0%"><font color="#000000">12%</font></td>
+            </tr>
+            <tr>
+              <td height="20" align="left" valign=bottom><font color="#000000">16 in Qualifying</font></td>
+              <td align="left" valign=bottom><font color="#000000">11 in race</font></td>
+              <td align="right" valign=bottom sdval="0.12173913043478" sdnum="1033;0;0%"><font color="#000000">12%</font></td>
+            </tr>
+            <tr>
+              <td height="20" align="left" valign=bottom><font color="#000000">10 in Qualifying</font></td>
+              <td align="left" valign=bottom><font color="#000000">13 in race</font></td>
+              <td align="right" valign=bottom sdval="0.11965811965812" sdnum="1033;0;0%"><font color="#000000">12%</font></td>
+            </tr>
+            <tr>
+              <td height="20" align="left" valign=bottom><font color="#000000">6 in Qualifying</font></td>
+              <td align="left" valign=bottom><font color="#000000">3 in race</font></td>
+              <td align="right" valign=bottom sdval="0.11764705882353" sdnum="1033;0;0%"><font color="#000000">12%</font></td>
+            </tr>
+            <tr>
+              <td height="20" align="left" valign=bottom><font color="#000000">4 in Qualifying</font></td>
+              <td align="left" valign=bottom><font color="#000000">2 in race</font></td>
+              <td align="right" valign=bottom sdval="0.11666666666667" sdnum="1033;0;0%"><font color="#000000">12%</font></td>
+            </tr>
+            <tr>
+              <td height="20" align="left" valign=bottom><font color="#000000">8 in Qualifying</font></td>
+              <td align="left" valign=bottom><font color="#000000">7 in race</font></td>
+              <td align="right" valign=bottom sdval="0.11666666666667" sdnum="1033;0;0%"><font color="#000000">12%</font></td>
+            </tr>
+            <tr>
+              <td height="20" align="left" valign=bottom><font color="#000000">15 in Qualifying</font></td>
+              <td align="left" valign=bottom><font color="#000000">13 in race</font></td>
+              <td align="right" valign=bottom sdval="0.11504424778761" sdnum="1033;0;0%"><font color="#000000">12%</font></td>
+            </tr>
+            <tr>
+              <td height="20" align="left" valign=bottom><font color="#000000">11 in Qualifying</font></td>
+              <td align="left" valign=bottom><font color="#000000">9 in race</font></td>
+              <td align="right" valign=bottom sdval="0.10924369747899" sdnum="1033;0;0%"><font color="#000000">11%</font></td>
+            </tr>
+            <tr>
+              <td height="20" align="left" valign=bottom><font color="#000000">18 in Qualifying</font></td>
+              <td align="left" valign=bottom><font color="#000000">13 in race</font></td>
+              <td align="right" valign=bottom sdval="0.10924369747899" sdnum="1033;0;0%"><font color="#000000">11%</font></td>
+            </tr>
+            <tr>
+              <td height="20" align="left" valign=bottom><font color="#000000">9 in Qualifying</font></td>
+              <td align="left" valign=bottom><font color="#000000">10 in race</font></td>
+              <td align="right" valign=bottom sdval="0.10924369747899" sdnum="1033;0;0%"><font color="#000000">11%</font></td>
+            </tr>
+          </table>
       </div>
     </div>
   </section>
@@ -291,7 +295,7 @@
     <div class="footer-top wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
       <div class="container text-center">
         <div class="footer-logo">
-          <a href="Home.html"><img class="img-responsive" src="images/swift.png.png" alt=""></a>
+          <a href="Home.html"><img class="img-responsive" src="images/swift.png" alt=""></a>
         </div>
         <div class="social-icons">
           <ul>
