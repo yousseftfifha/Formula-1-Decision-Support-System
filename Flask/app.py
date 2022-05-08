@@ -73,6 +73,7 @@ def classifier():
 
     return render_template('index.html', DriverClass=' Predicted Class 🥁🥁 : {} '.format(int(prediction)))
 
+
 # @app.route('/predict_api',methods=['POST'])
 # def predict_api():
 #     '''

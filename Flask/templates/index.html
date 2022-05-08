@@ -8,12 +8,36 @@
 <link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
-<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/st3.css') }}">
 
 </head>
 
 <body>
  <div class="login">
+<h1>Predict Driver Class In Race session </h1>
+
+     <h4>
+
+1 highly performant <br>
+
+2 performant <br>
+
+3 averagely performant <br>
+
+4 unperformant</h4>
+     <!-- Main Input For Receiving Query to our ML -->
+    <form action="{{ url_for('classifier')}}"method="post">
+
+        <input type="text" name="laps" placeholder="laps" required="required" />
+        <input type="text" name="age" placeholder="age" required="required" />
+        <input type="text" name="fastest_lapspeed" placeholder="fastest_lapspeed" required="required" />
+        <input type="text" name="laptime_sec" placeholder="laptime_sec" required="required" />
+
+        <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+    </form>
+     <br>
+   <br>
+   {{ DriverClass }}
 
 <h1>Predict Driver Performance In Race session </h1>
 
@@ -152,30 +176,7 @@
    {{ DriverQualifyingP }}
 
 
-<h1>Predict Driver Class In Race session </h1>
 
-     <h4>
-
-1 highly performant <br>
-
-2 performant <br>
-
-3 averagely performant <br>
-
-4 unperformant</h4>
-     <!-- Main Input For Receiving Query to our ML -->
-    <form action="{{ url_for('classifier')}}"method="post">
-
-        <input type="text" name="laps" placeholder="laps" required="required" />
-        <input type="text" name="age" placeholder="age" required="required" />
-        <input type="text" name="fastest_lapspeed" placeholder="fastest_lapspeed" required="required" />
-        <input type="text" name="laptime_sec" placeholder="laptime_sec" required="required" />
-
-        <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
-    </form>
-     <br>
-   <br>
-   {{ DriverRaceP }}
  </div>
 
 
