@@ -35,6 +35,39 @@
         <div class="item active" style="background-image: url(images/1.png)">
           <div class="caption">
             <h1 class="animated fadeInLeftBig">Welcome to <span>Swift</span></h1>
+              <h1 class="animated fadeInLeftBig">Upcoming Race <span><p id="demo"></p>
+
+          <script>
+          // Set the date we're counting down to
+          var countDownDate = new Date("May 22, 2022 14:00:00").getTime();
+          // Update the count down every 1 second
+          var x = setInterval(function() {
+
+            // Get today's date and time
+            var now = new Date().getTime();
+
+            // Find the distance between now and the count down date
+            var distance = countDownDate - now;
+
+            // Time calculations for days, hours, minutes and seconds
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            // Output the result in an element with id="demo"
+            document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+                    + minutes + "m " + seconds + "s ";
+
+            // If the count down is over, write some text
+            if (distance < 0) {
+              clearInterval(x);
+              document.getElementById("demo").innerHTML = "EXPIRED";
+            }
+          }, 1000);
+          </script>
+            </span></h1>
+
             <a data-scroll class="btn btn-start animated fadeInUpBig" href="#services">Start now</a>
           </div>
         </div>
@@ -100,7 +133,9 @@
           </div>
 
         </div>
-      </div>
+
+
+    </div>
   </section><!--/#services-->
   <section id="features" class="parallax">
     <div class="container">
@@ -125,7 +160,7 @@
         </div>
 
       </div>
-      <div class="container">
+      <div id="asso" class="container">
         <h1>Association rules between position in Qualifying session and the rank in Race session </h1>
         <table class="table table-bordered table-hover table-condensed sortable">
           <colgroup width="207"></colgroup>
@@ -295,7 +330,7 @@
     <div class="footer-top wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
       <div class="container text-center">
         <div class="footer-logo">
-          <a href="Home.html"><img class="img-responsive" src="images/swift.png" alt=""></a>
+          <a href="Home.html"><img class="img-responsive" src="images/swift.png" width="200px" height="200px" alt=""></a>
         </div>
         <div class="social-icons">
           <ul>
