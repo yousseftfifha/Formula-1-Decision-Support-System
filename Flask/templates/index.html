@@ -29,10 +29,10 @@
      <!-- Main Input For Receiving Query to our ML -->
     <form action="{{ url_for('classifier')}}"method="post">
 
-        <input type="text" name="laps" placeholder="laps" required="required" />
-        <input type="text" name="age" placeholder="age" required="required" />
-        <input type="text" name="fastest_lapspeed" placeholder="fastest_lapspeed" required="required" />
-        <input type="text" name="laptime_sec" placeholder="laptime_sec" required="required" />
+        <input type="text" name="laps" placeholder="laps 54 -> 72" required="required" />
+        <input type="text" name="age" placeholder="age 20 -> 45 "  required="required" />
+        <input type="text" name="fastest_lapspeed" placeholder="fastest lapspeed 180->270" required="required" />
+        <input type="text" name="laptime_sec" placeholder="laptime " required="required" />
 
         <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
     </form>
@@ -76,7 +76,7 @@
             <option value="17" label="Polish">
 
         </datalist>
-        <input type="text" name="points" placeholder="points" required="required" />
+        <input type="text" name="points" placeholder="points 100 ->525 " required="required" />
         <input type="text" name="age" placeholder="age" required="required" />
 
         <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
@@ -120,9 +120,9 @@
 
 
         </datalist>
-        <input type="text" name="horsepower" placeholder="horsepower" required="required" />
-        <input type="text" name="weight" placeholder="weight" required="required" />
-        <input type="text" name="acceleration" placeholder="acceleration" required="required" />
+        <input type="text" name="horsepower" placeholder="horsepower 600 ->800" required="required" />
+        <input type="text" name="weight" placeholder="weight 1600 ->2500" required="required" />
+        <input type="text" name="acceleration" placeholder="acceleration 160 ->240" required="required" />
 
         <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
     </form>
@@ -165,8 +165,8 @@
             <option value="17" label="Polish">
 
         </datalist>
-        <input type="text" name="points" placeholder="points" required="required" />
-        <input type="text" name="age" placeholder="age" required="required" />
+        <input type="text" name="points 100 ->525" placeholder="points" required="required" />
+        <input type="text" name="age 20 ->40" placeholder="age" required="required" />
 
         <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
     </form>
@@ -193,6 +193,10 @@
 
         <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
     </form>
+    <br>
+    <br>
+    <br>
+
     <center>
      {% for table in tables %}
             {{titles[loop.index]}}
