@@ -14,6 +14,7 @@
 
 <body>
  <div class="login">
+
 <h1>Predict Driver Class In Race session </h1>
 
      <h4>
@@ -175,8 +176,30 @@
    <br>
    {{ DriverQualifyingP }}
 
+    <div class="container center">
+    <h1>Predict next race outcome</h1>
+     <!-- Main Input For Receiving Query to our ML -->
+    <form action="{{ url_for('html_table')}}" method="post">
+
+        <input type="text" name="circuit_id" placeholder="circuit_id" list="circuit_id">
+        <datalist id="circuit_id">
+            <option value="bahrain" label="Bahrain">
+            <option value="imola" label="Imola">
+            <option value="jeddah" label="Jeddah">
+            <option value="albert_park" label="Albert Park">
 
 
+        </datalist>
+
+        <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+    </form>
+    <center>
+     {% for table in tables %}
+            {{titles[loop.index]}}
+            {{ table|safe }}
+         </center>
+{% endfor %}
+    </div>
  </div>
 
 

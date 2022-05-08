@@ -8,6 +8,7 @@ PerfomancePredictormodel = pickle.load(open('performancePredictor.pkl', 'rb'))
 PerfomancePredictorInRacemodel = pickle.load(open('performancePredictorInRace.pkl', 'rb'))
 ConstructorperformancePredictorInRacemodel = pickle.load(open('ConstructorperformancePredictorInRace.pkl', 'rb'))
 Knnmodel = pickle.load(open('Knn.pkl', 'rb'))
+appended_data = pickle.load(open('appended_data1.pkl', 'rb'))
 
 @app.route('/')
 def home():
@@ -72,6 +73,12 @@ def classifier():
 
 
     return render_template('index.html', DriverClass=' Predicted Class 🥁🥁 : {} '.format(int(prediction)))
+
+@app.route('/html_table', methods=['POST'])
+def html_table():
+    myvar = request.form["circuit_id"]
+    df=appended_data[appended_data['circuit_id']== myvar]
+    return render_template('index.html',  tables=[df.to_html(classes='data')], titles=df.columns.values)
 
 
 # @app.route('/predict_api',methods=['POST'])
