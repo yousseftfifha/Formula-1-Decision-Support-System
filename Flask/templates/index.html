@@ -28,10 +28,13 @@
 4 unperformant</h4>
      <!-- Main Input For Receiving Query to our ML -->
     <form action="{{ url_for('classifier')}}"method="post">
-
+        <label for="laps">laps</label><br>
         <input type="text" name="laps" placeholder="laps 54 -> 72" required="required" />
+        <label for="age">age</label><br>
         <input type="text" name="age" placeholder="age 20 -> 45 "  required="required" />
+        <label for="fastest_lapspeed">fastest lapspeed</label><br>
         <input type="text" name="fastest_lapspeed" placeholder="fastest lapspeed 180->270" required="required" />
+        <label for="laptime_sec">laptime</label><br>
         <input type="text" name="laptime_sec" placeholder="laptime " required="required" />
 
         <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
@@ -44,6 +47,7 @@
 
      <!-- Main Input For Receiving Query to our ML -->
     <form action="{{ url_for('predictRace')}}"method="post">
+        <label for="Code">Code</label><br>
         <input type="text" name="Code" placeholder="Code" list="Code">
         <datalist id="Code">
             <option value="11" label="HAM">
@@ -61,6 +65,7 @@
             <option value="27" label="OCO">
 
         </datalist>
+        <label for="Nationality">Nationality</label><br>
          <input type="text" name="Nationality" placeholder="Nationality" list="Nationality">
         <datalist id="Nationality">
             <option value="4" label="British">
@@ -76,7 +81,9 @@
             <option value="17" label="Polish">
 
         </datalist>
+        <label for="points">Nationality</label><br>
         <input type="text" name="points" placeholder="points 100 ->525 " required="required" />
+        <label for="age">age</label><br>
         <input type="text" name="age" placeholder="age" required="required" />
 
         <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
@@ -88,6 +95,7 @@
 
      <!-- Main Input For Receiving Query to our ML -->
     <form action="{{ url_for('predictConstructor')}}"method="post">
+        <label for="constructorName">constructorName</label><br>
         <input type="text" name="constructorName" placeholder="constructorName" list="constructorName">
         <datalist id="constructorName">
             <option value="10" label="Mercedes">
@@ -107,6 +115,7 @@
             <option value="7" label="Sauber">
 
         </datalist>
+        <label for="constructorNationality">constructorNationality</label><br>
          <input type="text" name="constructorNationality" placeholder="constructorNationality" list="constructorNationality">
         <datalist id="constructorNationality">
             <option value="4" label="German">
@@ -120,8 +129,11 @@
 
 
         </datalist>
+        <label for="horsepower">horsepower</label><br>
         <input type="text" name="horsepower" placeholder="horsepower 600 ->800" required="required" />
+        <label for="weight">weight</label><br>
         <input type="text" name="weight" placeholder="weight 1600 ->2500" required="required" />
+        <label for="acceleration">acceleration</label><br>
         <input type="text" name="acceleration" placeholder="acceleration 160 ->240" required="required" />
 
         <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
@@ -132,7 +144,7 @@
 <h1>Predict Driver Performance In Qualifying session</h1>
      <!-- Main Input For Receiving Query to our ML -->
     <form action="{{ url_for('predict')}}"method="post">
-
+        <label for="Code">Code</label><br>
         <input type="text" name="Code" placeholder="Code" list="Code">
         <datalist id="Code">
             <option value="13" label="HAM">
@@ -150,6 +162,7 @@
             <option value="30" label="NOR">
 
         </datalist>
+        <label for="Nationality">Nationality</label><br>
          <input type="text" name="Nationality" placeholder="Nationality" list="Nationality">
         <datalist id="Nationality">
             <option value="4" label="British">
@@ -165,7 +178,9 @@
             <option value="17" label="Polish">
 
         </datalist>
+        <label for="Nationality">points</label><br>
         <input type="text" name="points 100 ->525" placeholder="points" required="required" />
+        <label for="Nationality">age</label><br>
         <input type="text" name="age 20 ->40" placeholder="age" required="required" />
 
         <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
@@ -180,7 +195,7 @@
     <h1>Predict next race outcome</h1>
      <!-- Main Input For Receiving Query to our ML -->
     <form action="{{ url_for('html_table')}}" method="post">
-
+    <label for="circuit_id">circuit</label><br>
         <input type="text" name="circuit_id" placeholder="circuit" list="circuit_id">
         <datalist id="circuit_id">
             <option value="bahrain" label="Bahrain">
@@ -190,13 +205,31 @@
 
 
         </datalist>
+        <label for="driver">driver</label><br>
+        <input type="text" name="driver" placeholder="driver" list="driver">
+        <datalist id="driver">
+            <option value="bottas" label="bottas">
+            <option value="hamilton" label="hamilton">
+            <option value="leclerc" label="leclerc">
+            <option value="alonso" label="alonso">
+            <option value="kevin_magnussen" label="kevin_magnussen">
+            <option value="max_verstappen" label="max_verstappen">
+            <option value="sainz" label="sainz">
+            <option value="tsunoda" label="tsunoda">
+            <option value="perez" label="perez">
+            <option value="russell" label="russell">
+            <option value="zhou" label="zhou">
+            <option value="ricciardo" label="ricciardo">
+
+
+        </datalist>
 
         <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
     </form>
     <br>
     <br>
     <br>
-
+{{ driver }}
     <center>
      {% for table in tables %}
             {{titles[loop.index]}}

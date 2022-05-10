@@ -76,8 +76,9 @@ def classifier():
 
 @app.route('/html_table', methods=['POST'])
 def html_table():
-    myvar = request.form["circuit_id"]
-    df=appended_data[appended_data['circuit_id']== myvar]
+    circuit = request.form["circuit_id"]
+    driver = request.form["driver"]
+    df=appended_data[(appended_data['circuit_id']== circuit ) & (appended_data['driver']== driver )]
     df.rename(columns = {'circuit_id':'circuit'}, inplace = True)
     return render_template('index.html',  tables=[df.to_html(classes='data')], titles=df.columns.values)
 
